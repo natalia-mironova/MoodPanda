@@ -17,6 +17,7 @@ public class LoginPage {
     }
 
     public LoginPage login(String user, String password) {
+        sleep(3000);
         $(By.id("ContentPlaceHolderContent_TextBoxEmail")).setValue(user);
         sleep(5000);
         $(By.id("ContentPlaceHolderContent_TextBoxPassword")).setValue(password);
