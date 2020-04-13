@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class MoodTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL) //Severity for Allure Report
     @Test(description = "User loggs in and updates Mood", priority = 1)
-    @Description("Check is user is able to update the Mood")
+    @Description("Check if user is able to update the Mood")
     @Link("https://moodpanda.com/Feed/") //Link
     @Issue("linkToBugReport")
     @TmsLink("linkToTestCaseInTmsSystem")
