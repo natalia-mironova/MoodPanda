@@ -18,13 +18,11 @@ public class LoginPage {
 
     public LoginPage login(String user, String password) {
         $(By.id("ContentPlaceHolderContent_TextBoxEmail")).sendKeys(user);
-        sleep(2000);
+        sleep(5000);
         $(By.id("ContentPlaceHolderContent_TextBoxPassword")).sendKeys(password);
-        sleep(2000);
+        sleep(5000);
         $(By.id("ContentPlaceHolderContent_ButtonLogin")).click();
         return this;
     }
-
-
 
 }
