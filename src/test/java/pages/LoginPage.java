@@ -17,15 +17,12 @@ public class LoginPage {
     }
 
     public LoginPage login(String user, String password) {
-        $(By.id("ContentPlaceHolderContent_TextBoxEmail")).setValue(user);
-        sleep(2000);
-        $(By.id("ContentPlaceHolderContent_TextBoxPassword")).setValue(password);
-        sleep(2000);
+        $(By.id("ContentPlaceHolderContent_TextBoxEmail")).sendKeys(user);
+        sleep(5000);
+        $(By.id("ContentPlaceHolderContent_TextBoxPassword")).sendKeys(password);
+        sleep(5000);
         $(By.id("ContentPlaceHolderContent_ButtonLogin")).click();
-        sleep(2000);
         return this;
     }
-
-
 
 }
